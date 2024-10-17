@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suriya Bakes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./script.js">
+</head>
+<body>
+     <!--Navbar-->
+     <nav>
+        <span class="logo">SURIYA BAKES</span>
+        <label for="check" id="toggle"><i class="fa-solid fa-bars" id="menu"></i></label>
+        <input type="checkbox" name="check" id="check">
+        <ul>
+            <li><a href="" class="link">HOME</a></li>
+            <li><a href="#about" class="link">ABOUT</a></li>
+            <li><a href="#menucards" class="link">MENU</a></li>
+            <li><a href="#reservations" class="link">RESERVATIONS</a></li>
+            <li><a href="#gallery" class="link">GALLERY</a></li>
+            <li><a href="#contact" class="link">CONTACT</a></li>
+        </ul>
+        <div class="btndiv">
+            <button class="contact">PURCHASE</button>
+        </div>
+    </nav>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the checkbox input element
+    const checkbox = document.getElementById('check');
+    
+    // Get all navigation links
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    // Add a click event listener to each link
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            // Uncheck the checkbox to hide the menu
+            checkbox.checked = false;
+        });
+    });
+});
+    </script>
+
+    <!--NavbarEnd-->
+
+    <!--Carousels-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/rs2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/rs1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/rs4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--CarouselsEnd-->
+
+    <!--Container1-->
+    <div class="container-fluid p-3 h-175">
+        <div class="row mt-3">
+            <div class="col-lg-4 col-sm-12 col-md-12">
+                <div class="cards" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-info">
+                            <span class="card-text">
+                               OUR STORY
+                            </span>
+                        </div>
+                        <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/h1.jpg" alt="">
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-12">
+       
+            <div class="cards">
+                <div class="card" data-aos="fade-up">
+                    <div class="card-info">
+                        <span class="card-text">
+                           THE MENU
+                        </span>
+                    </div>
+                    <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/h2.jpg" alt="">
+                </div>
+            </div>  
+
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-12">
+                <div class="cards">
+                    <div class="card" data-aos="fade-up">
+                        <div class="card-info">
+                            <span class="card-text">
+                               EVENTS
+                            </span>
+                        </div>
+                        <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/h4.jpg" alt="">
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!--Container1End-->
+
+    <!--Container2-->
+    <section id="about">
+    <div class="container-fluid p-3" style="background-color: rgba(238,240,241,255);">
+        <div class="row">
+            <div class="col-lg-1 col-sm-12 col-md-12">
+
+            </div>
+            <div class="col-lg-5 col-sm-12 col-md-12 p-3" data-aos="zoom-in-right">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/a1.jpg" alt="" width="600" class="card-img-top">
+            </div>
+            <div class="col-lg-5 col-sm-12 col-md-12 mt-5" data-aos="zoom-in-left">
+                <div class="discovertext1">
+                    <h2 class="text-center">Discover Our STORY</h2>
+                    <p class="text-center p-3">Curabitur quas nets lacus ets nulat iaculis loremis etis nisle varius vitae seditum fugiatum ligula aliquam qui sequi. Lorem ipsum dolor sit amet, consectetur adipiscing elit rutrum eleif arcu sit aspernatur nets fugit, sed quia.</p>
+                    <button class="btn btn-warning mt-1 discovermorebtn">OUR RECEIPES</button>
+                </div>
+            </div>
+            <div class="col-lg-1 col-sm-12 col-md-12">
+                
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--Container2End-->
+
+    <!--Container3-->
+    <div class="container-fluid" style="background-image: url('https://images.alphacoders.com/133/thumb-1920-1339864.png');background-repeat: no-repeat;background-size: cover;background-clip: content-box;background-attachment: fixed;">
+        <div class="row">
+            <div class="col-lg-1 col-sm-12 col-md-12">
+              
+            </div>
+            <div class="col-lg-10 col-sm-12 col-md-12 p-5 text-center">
+              <p class="container3text" data-aos="fade-down">"Baking makes me focus. On weighing the sugar. On sieving the flour. I find it calming, <br>
+                rewarding because, in fairness, it is sort of magic - you start off with all disparate the stuff <br>
+                like butter and eggs, and what you end up with is so totally different."</p>
+            </div>
+            <div class="col-lg-1 col-sm-12 col-md-10">
+              
+            </div>
+        </div>
+    </div>
+    <!--Container3End-->
+
+    <!--Container4-->
+    <div class="container-fluid p-3" style="background-color: rgba(238,240,241,255);">
+        <div class="row">
+            <div class="col-lg-1 col-sm-12 col-md-12">
+
+            </div>
+            <div class="col-lg-5 col-sm-12 col-md-12 mt-5" data-aos="zoom-in-right">
+                <div class="discovertext1">
+                    <h2 class="text-center">Discover Our STORY</h2>
+                    <p class="text-center p-3">Curabitur quas nets lacus ets nulat iaculis loremis etis nisle varius vitae seditum fugiatum ligula aliquam qui sequi. Lorem ipsum dolor sit amet, consectetur adipiscing elit rutrum eleif arcu sit aspernatur nets fugit, sed quia.</p>
+                    <button class="btn btn-warning mt-1 discovermorebtn">OUR RECEIPES</button>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-sm-12 col-md-12 p-3" data-aos="zoom-in-left">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/a4.jpg" alt="" width="600" class="card-img-top">
+            </div>
+            
+            <div class="col-lg-1 col-sm-12 col-md-12">
+                
+            </div>
+        </div>
+    </div>
+    <!--Container4End-->
+
+    <!--Container5(Daily Menu)-->
+    <section id="menucards">
+    <div class="bg-light">
+        <div class="container p-3">
+            <h3 class="text-center p-3">Daily Menu</h3>
+            <h2 class="text-center">FRESH & TASTY</h2>
+            <div class="row mt-5">
+                <div class="col-lg-6 col-sm-12 col-md-12">
+                    <div class="carding">
+                        <div class="thumb">
+                            <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/m1.jpg" alt="" width="150" height="150" data-aos="zoom-in">
+                        </div>
+                        <div class="content">
+                           <h5 class="">Caffee Americano - <i class="fa-solid fa-indian-rupee-sign ms-2" style="color: black;font-size: 19px;"></i> 12.95</h5>
+                           <p>Quis autem veli eum iure reprehenderit quis voluptat velit esse quam nihil molestiae consequatur, vel illum net quis dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-md-12">
+                    <div class="carding">
+                        <div class="thumb">
+                            <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/m9.jpg" alt="" width="150" height="150" data-aos="zoom-out">
+                        </div>
+                        <div class="content">
+                           <h5 class="">Cranberry Cake - <i class="fa-solid fa-indian-rupee-sign ms-2" style="color: black;font-size: 19px;"></i> 10.25</h5>
+                           <p>Quis autem veli eum iure reprehenderit quis voluptat velit esse quam nihil molestiae consequatur, vel illum net quis dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Row2-->
+            <div class="row mt-5">
+                <div class="col-lg-6 col-sm-12 col-md-12">
+                    <div class="carding">
+                        <div class="thumb">
+                            <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/m8.jpg" alt="" width="150" height="150" data-aos="zoom-in">
+                        </div>
+                        <div class="content">
+                           <h5 class="">Cheese Cake - <i class="fa-solid fa-indian-rupee-sign ms-2" style="color: black;font-size: 19px;"></i> 10.45</h5>
+                           <p>Quis autem veli eum iure reprehenderit quis voluptat velit esse quam nihil molestiae consequatur, vel illum net quis dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-md-12">
+                    <div class="carding">
+                        <div class="thumb">
+                            <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/m3.jpg" alt="" width="150" height="150" data-aos="zoom-out">
+                        </div>
+                        <div class="content">
+                           <h5 class="">Light Cappuccino -<i class="fa-solid fa-indian-rupee-sign ms-2" style="color: black;font-size: 19px;"></i> 11.25</h5>
+                           <p>Quis autem veli eum iure reprehenderit quis voluptat velit esse quam nihil molestiae consequatur, vel illum net quis dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Row3-->
+            <div class="row mt-5">
+                <div class="col-lg-6 col-sm-12 col-md-12">
+                    <div class="carding">
+                        <div class="thumb">
+                            <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/m2.jpg" alt="" width="150" height="150" data-aos="zoom-in">
+                        </div>
+                        <div class="content">
+                           <h5 class="">Caramel Latte - <i class="fa-solid fa-indian-rupee-sign ms-2" style="color: black;font-size: 19px;"></i> 7.50</h5>
+                           <p>Quis autem veli eum iure reprehenderit quis voluptat velit esse quam nihil molestiae consequatur, vel illum net quis dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-md-12">
+                    <div class="carding">
+                        <div class="thumb">
+                            <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/m4.jpg" alt="" width="150" height="150" data-aos="zoom-out">
+                        </div>
+                        <div class="content">
+                           <h5 class="">Honey Strawberry - <i class="fa-solid fa-indian-rupee-sign ms-2" style="color: black;font-size: 19px;"></i> 4.90</h5>
+                           <p>Quis autem veli eum iure reprehenderit quis voluptat velit esse quam nihil molestiae consequatur, vel illum net quis dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Row4-->
+            <div class="row mt-5">
+                <div class="col-lg-6 col-sm-12 col-md-12">
+                    <div class="carding">
+                        <div class="thumb">
+                            <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/m12.jpg" alt="" width="150" height="150" data-aos="zoom-in">
+                        </div>
+                        <div class="content">
+                           <h5 class="">Apple Cider - <i class="fa-solid fa-indian-rupee-sign ms-2" style="color: black;font-size: 19px;"></i> 5.95</h5>
+                           <p>Quis autem veli eum iure reprehenderit quis voluptat velit esse quam nihil molestiae consequatur, vel illum net quis dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-md-12">
+                    <div class="carding">
+                        <div class="thumb">
+                            <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/m11.jpg" alt="" width="150" height="150" data-aos="zoom-in">
+                        </div>
+                        <div class="content">
+                           <h5 class="">White Wine - <i class="fa-solid fa-indian-rupee-sign ms-2" style="color: black;font-size: 19px;"></i> 8.90</h5>
+                           <p>Quis autem veli eum iure reprehenderit quis voluptat velit esse quam nihil molestiae consequatur, vel illum net quis dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>    
+    <!--Container5(Daily Menu)End-->
+
+    <!--Container6-->
+    <div class="container-fluid bg-danger" style="background-image: url('https://images.inc.com/uploaded_files/image/1920x1080/getty_471798754_2000163220009280660_337737.jpg');background-repeat: no-repeat;background-size: cover;background-clip: content-box;background-attachment: fixed;">
+        <div class="row">
+            <div class="col-lg-1 col-sm-12 col-md-12">
+              
+            </div>
+            <div class="col-lg-10 col-sm-12 col-md-12 p-5 text-center" data-aos="fade-up-right">
+                <h3 class="text-warning fw-bold">Baking makes me focus.</h3>
+              <p class="containercuptext">"On weighing the sugar. On sieving the flour. I find it calming, <br>
+                rewarding because, in fairness, it is sort of magic - you start off with all disparate the stuff <br>
+                like butter and eggs, and what you end up with is so totally different."</p>
+            </div>
+            <div class="col-lg-1 col-sm-12 col-md-12">
+              
+            </div>
+        </div>
+    </div>
+    <!--Container6End-->
+    
+    <!--Container7(TopRatedProducts)-->
+    <div class="container-fluid mt-3">
+        <h3 class="text-center p-2">Top Rated Products</h3>
+        <p class="text-gray text-center p-2">Our Top Rated Products With Good Reviews</p>
+        <div class="row">
+            <div class="col-lg-2 col-sm-12 col-md-12 h-100">
+                <div class="card-container">
+                    <a href="/" class="hero-image-container">
+                      <img class="hero-image" src="https://shreemsweetsandbakery.com/wp-content/uploads/2020/12/roasted-masala-cashew-nut-300x300.jpg" alt="" data-aos="zoom-in"/>
+                    </a>
+                    <main class="main-content" data-aos="zoom-out">
+                      <h1><a href="#">GRAM NAMKEENS</a></h1>
+                      <p>ROASTED MASALA</p>
+                      <div class="flex-row">
+                        <div class="coin-base">
+                            <p><i class="fa-solid fa-indian-rupee-sign" style="color: gray;font-size: 12px;"></i>120.00 - <i class="fa-solid fa-indian-rupee-sign ms-2" style="color: gray;font-size: 12px;"></i> 1,200.00</p>
+                        </div>
+                      </div>
+                    </main>
+                </div>
+              </div>
+            <div class="col-lg-2 col-sm-12 col-md-12 h-100">
+                <div class="card-container">
+                    <a href="/" class="hero-image-container">
+                      <img class="hero-image" src="https://shreemsweetsandbakery.com/wp-content/uploads/2020/12/marble-cake-300x300.jpg" alt="" data-aos="zoom-in"/>
+                    </a>
+                    <main class="main-content" data-aos="zoom-out">
+                      <h1><a href="#">CAKES, DRY CAKES</a></h1>
+                      <p>Granite Bar Cake</p>
+                      <div class="flex-row">
+                        <div class="coin-base">
+                            <p><i class="fa-solid fa-indian-rupee-sign ms-2" style="color: gray;font-size: 12px;"></i>40.00</p>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+              </div>
+            <div class="col-lg-2 col-sm-12 col-md-12 h-100">
+                <div class="card-container">
+                    <a href="/" class="hero-image-container">
+                      <img class="hero-image" src="https://shreemsweetsandbakery.com/wp-content/uploads/2020/11/milk-peda-300x300.jpg" alt=""  data-aos="zoom-in" />
+                    </a>
+                    <main class="main-content" data-aos="zoom-out">
+                      <h1><a href="#">SWEETS (GHEE)</a></h1>
+                      <p>Milk Peda</p>
+                      <div class="flex-row">
+                        <div class="coin-base">
+                            <p><i class="fa-solid fa-indian-rupee-sign" style="color: gray;font-size: 12px;"></i>110.00 - <i class="fa-solid fa-indian-rupee-sign ms-2" style="color: gray;font-size: 12px;"></i>440.00</p>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+              </div>
+            <div class="col-lg-2 col-sm-12 col-md-12 h-100">
+                <div class="card-container">
+                    <a href="/" class="hero-image-container">
+                      <img class="hero-image" src="https://shreemsweetsandbakery.com/wp-content/uploads/2020/11/Karasev-300x300.jpg" alt="" data-aos="zoom-in"/>
+                    </a>
+                    <main class="main-content" data-aos="zoom-out">
+                      <h1><a href="#">FLOUR NAMKEENS</a></h1>
+                      <p>Karasev</p>
+                      <div class="flex-row">
+                        <div class="coin-base">
+                            <p><i class="fa-solid fa-indian-rupee-sign" style="color: gray;font-size: 12px;"></i>32.00 - 320.00</p>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+              </div>
+            <div class="col-lg-2 col-sm-12 col-md-12 h-100">
+                <div class="card-container">
+                    <a href="/" class="hero-image-container">
+                      <img class="hero-image" src="https://media.britannia.co.in/Jim_Jam_1_9a9dddaf67.jpg" alt="" data-aos="zoom-in"/>
+                    </a>
+                    <main class="main-content" data-aos="zoom-out">
+                      <h1><a href="#">COOKIES</a></h1>
+                      <p>Jam Cream Cookies</p>
+                      <div class="flex-row">
+                        <div class="coin-base">
+                            <p><i class="fa-solid fa-indian-rupee-sign" style="color: gray;font-size: 12px;"></i>120.00 - <i class="fa-solid fa-indian-rupee-sign ms-2" style="color: gray;font-size: 12px;"></i>240.00</p>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+              </div>
+            <div class="col-lg-2 col-sm-12 col-md-12 h-100">
+                <div class="card-container">
+                    <a href="/" class="hero-image-container">
+                      <img class="hero-image" src="https://www.baskymart.com/cdn/shop/products/30231612610273.jpg?v=1679578869" alt="" data-aos="zoom-in"/>
+                    </a>
+                    <main class="main-content" data-aos="zoom-out">
+                      <h1><a href="#">MITHAIS & CANDIES</a></h1>
+                      <p>Kadalai Mittai</p>
+                      <div class="flex-row">
+                        <div class="coin-base">
+                            <p><i class="fa-solid fa-indian-rupee-sign" style="color: gray;font-size: 12px;"></i>6.00 - <i class="fa-solid fa-indian-rupee-sign ms-2" style="color: gray;font-size: 12px;"></i>48.00</p>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!--Container7End-->
+
+    <!--Container8(Gallery)-->
+    <section id="gallery">
+    <div class="gallery container-fluid text-center">
+        <h2 class="text-center p-3">Gallery</h2>
+        <div class="row" data-aos="">
+            <div class="col-lg-4 col-sm-12 col-md-12">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/food1.jpg" alt="" class="img">
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-12">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/food4.jpg" alt="" class="img">
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-12">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/food0.jpg" alt="" class="img">
+            </div>
+        </div>
+        <div class="row mt-1" data-aos="zoom-in-right">
+            <div class="col-lg-4 col-sm-12 col-md-12">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/food2.jpg" alt="" class="img">
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-12">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/food5.jpg" alt="" class="img">
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-12">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/food9.jpg" alt="" class="img">
+            </div>
+        </div>
+        <div class="row mt-1" data-aos="zoom-in-left">
+            <div class="col-lg-4 col-sm-12 col-md-12">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/food8.jpg" alt="" class="img">
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-12">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/food3.jpg" alt="" class="img">
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-12">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/food11.jpg" alt="" class="img">
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--Container8(GalleryEnd)-->
+
+    <!--Container9-->
+    <div class="container p-3 mt-3">
+        <h3 class="text-center">Tasty Cakes FRESHLY BAKED</h3>
+        <div class="container-fluid p-3 h-175" data-aos="zoom-in">
+            <div class="row mt-3">
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card-info">
+                                <span class="card-text">
+                                    <h4 class="text-center">Brownies and Coffees</h4>
+                                </span>
+                            </div>
+                            <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/food1.jpg" alt="">
+                        </div>
+                        <div class="paragraph">
+                            <h5 class="text-center">Olden London Hub</h5>
+                            <p>Quis autem velis et reprehender etims quiste voluptate velit esse quam nihil etsa illum sedit consequatur quias voluptas sit netsum.</p>
+                            <button class="discovermorebtn">DISCOVER MORE</button>
+                        </div>
+                    </div>  
+                </div>
+    
+                  
+                <div class="col-lg-4 col-sm-12 col-md-12">
+           
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-info">
+                            <span class="card-text">
+                                <h4 class="text-center">New Cooking Recipes</h4>
+                            </span>
+                        </div>
+                        <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/food2.jpg" alt="">
+                    </div>
+                    <div class="paragraph">
+                        <h5 class="text-center">Olden London Hub</h5>
+                        <p>Quis autem velis et reprehender etims quiste voluptate velit esse quam nihil etsa illum sedit consequatur quias voluptas sit netsum.</p>
+                        <button class="discovermorebtn">DISCOVER MORE</button>
+                    </div>
+                </div>  
+    
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card-info">
+                                <span class="card-text">
+                                   <h4 class="text-center">Oldest London Pub</h4>
+                                </span>
+                            </div>
+                            <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/food0.jpg" alt="">
+                        </div>
+                        <div class="paragraph">
+                            <h5 class="text-center">Olden London Hub</h5>
+                            <p>Quis autem velis et reprehender etims quiste voluptate velit esse quam nihil etsa illum sedit consequatur quias voluptas sit netsum.</p>
+                            <button class="discovermorebtn">DISCOVER MORE</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>    
+    </div>
+    <!--Container9End-->
+
+    <!--Container10(GetInTouch)-->
+  <div class="wrapper bg-light">
+    <h2>GET IN TOUCH with </h2>
+    <a href="https://www.facebook.com/profile.php?id=100062754324837&mibextid=ZbWKwL" target="_blank" class="icon facebook"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/mr._.suriya._.14?igsh=MWc0eGduY292azFpaA==" target="_blank" class="icon instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="www.youtube.com" target="_blank" class="icon youtube"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://www.linkedin.com/in/suriya-prakash-a-2306b227a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+    <!--Container10(GetInTouch)End-->
+
+    <!--Container11(Reservations)-->
+    <section id="reservations">
+    <div class="container-fluid">
+        <div class="text-center">
+            <h3>Reservations</h3>
+            <h2>ONLINE BOOKING</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-sm-12 col-md-12 p-0">
+                
+            </div>
+            <div class="col-lg-5 col-sm-12 col-md-12 p-0">
+                <img src="https://demo.epic-webdesign.com/tf-fable/bakery/images/chef2.jpg" alt="" class="image1 img-fluid">
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-12 p-lg-5 form-padding-3">
+                <form class="mt-3">
+                    <div class="mb-3">
+                        <label for="inputText" class="form-label">First Name</label>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16"></svg>
+                        <input type="text" class="form-control" id="inputText" aria-describedby="emailHelp">
+                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputbook" class="form-label">Booking Time</label>
+                      <input type="text" class="form-control" id="exampleInputbook">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPhone" class="form-label">Phone</label>
+                      <input type="text" class="form-control" id="exampleInputPhone">
+                    </div>
+                    <button type="submit" class="discovermorebtn">BOOK YOUR TABLE</button>
+                  </form>
+            </div>
+            <div class="col-lg-2 col-sm-12 col-md-12 p-0">
+    
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--Container11(Reservations)End-->
+
+    <!--Container11(Contact)-->
+    <section class="bg-light py-3 py-md-5" id="contact">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+              <h2 class="mb-4 text-center">Contact Us</h2>
+              <p class="text-secondary mb-5 text-center">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration, by injected humour, or new randomised words which don't look believable.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="container">
+          <div class="row justify-content-lg-center">
+            <div class="col-12 col-lg-9">
+              <div class="bg-white border rounded shadow-sm overflow-hidden">
+      
+                <form action="#!">
+                  <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                    <div class="col-12">
+                      <label for="fullname" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="fullname" name="fullname" value="" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="email" class="form-label">Email</label>
+                      <div class="input-group">
+    
+                        <input type="email" class="form-control" id="email" name="email" value="" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <div class="input-group">                                                                                                 
+                        <input type="tel" class="form-control" id="phone" name="phone" value="">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="d-grid">
+                        <button class="discovermorebtn h-100" type="submit">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--Container11(ContactEnd)-->
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="contentfooter p-5">
+          <div>
+            <h4>SURIYA BAKES</h4>
+            <p><a href="#">Home</a></p>
+            <p><a href="#about">About</a></p>
+            <p><a href="#menucards">Menu</a></p>
+            <p><a href="#reservations">Reservations</a></p>
+            <p><a href="#gallery">Gallery</a></p>
+            <p><a href="#contact">Contact</a></p>
+            <p><a href="#">Purchase</a></p>
+          </div>
+          <div>
+            <h4>PRODUCTS</h4>
+            <p><a href="">Cookies</a></p>
+            <p><a href="#">Cakes</a></p>
+            <p><a href="">Namkeens</a></p>
+            <p><a href="">Sweets</a></p>
+          </div>
+          <div>
+            <h4>ABOUT US</h4>
+            <p><a href="">Opened in July 2024,</a></p>
+            <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit,</a></p>
+            <p><a href=""> Quidem maiores necessitatibus hic sint tempora.</a></p>
+          </div>
+          <div>
+            <h4>CONTACT DETAILS</h4>
+            <p><a href="#">Quis autem velis et reprehender etims quiste <br>
+                 voluptate velit esse quam nihil etsa illum sedit <br>
+                  nisle quias.</a>
+            </p>
+            <div class="mt-3">
+            <p><a href="#"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> No.239, Kodairoad, Dindigul</a></p>
+            <p><a href="#"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> +91 8098645683 </a></p>
+            <p><a href=""><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> contact@suriyabakes.com</a></p>
+            <p><a href="">Timings: Mon to Sat - 9 AM to 6 PM</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FooterEnd-->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
